@@ -134,10 +134,8 @@ public class TwoDArray {
 		
 		StringBuilder toReturn = new StringBuilder();
 		
-		toReturn.append(arrayRows);
-		toReturn.append("\n");
-		toReturn.append(arrayColumns);
-		toReturn.append("\n");
+		toReturn.append("\n"+ arrayRows + " Rows\n");
+		toReturn.append(arrayColumns + " Columns\n");
 		
 		Stack<Integer> temp = new Stack<Integer>();
 		
@@ -150,8 +148,7 @@ public class TwoDArray {
 				}
 			}
 		}
-		toReturn.append(temp.size());
-		toReturn.append("\n");
+		toReturn.append(temp.size()+ " Unique Values\n");
 		
 		
 		while(!temp.isEmpty()) {
