@@ -15,6 +15,7 @@ public class Proj1Test {
 		//TwoDArray arr2d = new TwoDArray (rowLen, colLen, defaultVal);
 		TwoDArray arr2d = new TwoDArray (rowLen, colLen, defaultVal);
 		System.out.println("# rows: "+rowLen+", # cols: "+ colLen);
+		System.out.println("Default value is " + defaultVal);
 
 		
 		int testRow = 0, testCol = 0, testVal = 0;
@@ -33,12 +34,16 @@ public class Proj1Test {
 			}
 			
 			System.out.println("Insert -> ["+row+"]["+col+"] ="+val);
-			arr2d.insertInt(row, col, val);
+			System.out.println(arr2d.insertInt(row, col, val));
 		}
 		int returnedVal = arr2d.getInt(testRow, testCol);
 		System.out.println("Expecting: "+testVal+", returned: "+returnedVal+". Test passed: "+ (testVal==returnedVal));		
 		System.out.println("Details: "+arr2d.getArrayDetails());
 		System.out.println("Display: "+arr2d.getArrayDisplay());
+		arr2d.initArray(15);
+		System.out.println(arr2d.getArrayDisplay());
+		System.out.println(arr2d.getArrayDetails());
+		
 	}
 	
 	public static void main(String[] args) {
