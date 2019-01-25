@@ -43,6 +43,8 @@ public class Proj1Test {
 		System.out.println("Display: "+arr2d.getArrayDisplay());
 		arr2d.initArray(15);
 		System.out.println(arr2d.getArrayDisplay());
+		System.out.println(arr2d.insertInt(100, 100, 5));
+		System.out.println(arr2d.getInt(100, 100));
 		System.out.println(arr2d.getArrayDetails());
 		
 	}
