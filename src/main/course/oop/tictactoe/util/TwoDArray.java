@@ -29,6 +29,7 @@ public class TwoDArray {
 		arrayRows = rows;
 		
 		array = new int[rows][cols];
+		
 		for (int i=0; i<rows; i++) 
 		{
 			for(int j=0; j<cols; j++) 
@@ -70,6 +71,9 @@ public class TwoDArray {
 		 * Note: Print the int value in place of (). 
 		 * e.g., replace (val) with val.
 		 */
+		if(row > arrayRows | col > arrayColumns) {
+			return "Failure: index out of bounds!";
+		}
 		
 		if (val ==defaultValue) 
 		{
@@ -94,6 +98,10 @@ public class TwoDArray {
 		/*TODO - Return the value at the specified row, col
 		 * 
 		 */
+		
+		if(row > arrayRows | col>arrayColumns) {
+			return -1;
+		}
 		return array[row][col];
 		
 	}
