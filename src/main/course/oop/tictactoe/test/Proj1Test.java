@@ -37,6 +37,7 @@ public class Proj1Test {
 			System.out.println(arr2d.insertInt(row, col, val));
 		}
 		int returnedVal = arr2d.getInt(testRow, testCol);
+		System.out.println(testRow+ " "+ testCol);
 		System.out.println("Expecting: "+testVal+", returned: "+returnedVal+". Test passed: "+ (testVal==returnedVal));		
 		System.out.println("Details: "+arr2d.getArrayDetails());
 		System.out.println("Display: "+arr2d.getArrayDisplay());
